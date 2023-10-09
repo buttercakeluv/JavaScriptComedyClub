@@ -198,6 +198,8 @@ main::before {
   }
 }
 
+/* Your existing CSS code */
+
 /* Media Query for Tablets and Smaller Screens */
 @media screen and (max-width: 768px) {
   html {
@@ -214,19 +216,107 @@ main::before {
   }
 
   /* Add more responsive styling as needed */
+  .btn {
+    font-size: 2rem; /* Adjust button font size for tablets */
+    padding: 1rem 2rem; /* Adjust button padding for tablets */
+  }
+}
+
+/* Your existing CSS code */
+
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust the base font size for smaller screens */
+  }
+
+  main {
+    width: 90%; /* Adjust the main container width */
+    height: auto; /* Allow the container to expand vertically */
+  }
+
+  .player {
+    padding: 6rem; /* Adjust the player padding */
+  }
+
+  /* Add more responsive styling as needed */
+  .btn {
+    font-size: 2rem; /* Adjust button font size for tablets */
+    padding: 1rem 2rem; /* Adjust button padding for tablets */
+  }
+}
+
+/* Your existing CSS code */
+
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust the base font size for smaller screens */
+  }
+
+  main {
+    width: 90%; /* Adjust the main container width */
+    height: auto; /* Allow the container to expand vertically */
+  }
+
+  .player {
+    padding: 6rem; /* Adjust the player padding */
+  }
+
+  /* Add more responsive styling as needed */
+  .btn {
+    font-size: 2rem; /* Adjust button font size for tablets */
+    padding: 1rem 2rem; /* Adjust button padding for tablets */
+  }
 }
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
   html {
-    font-size: 40%; /* Further adjust the font size for smaller screens */
+    font-size: 40%;
   }
 
   main {
-    width: 100%; /* Make the main container full width */
+    width: 100%;
+    flex-direction: column;
   }
 
   .player {
-    padding: 3rem; /* Further adjust the player padding for mobile devices */
+    padding: 3rem;
+    text-align: center;
+  }
+
+  /* Center the buttons horizontally and add space between them */
+  .btn {
+    font-size: 1.8rem;
+    padding: 0.7rem 2.5rem;
+    margin: 1rem auto; /* Center the buttons horizontally and add space between them */
+  }
+
+  /* Adjust the position of the "New Game" button */
+  .btn--new {
+    margin-top: 4rem; /* Push "New Game" above */
+  }
+
+  /* Push "Roll Dice" and "Hold" below the player information */
+  .btn--roll,
+  .btn--hold {
+    margin-top: 2rem; /* Add space between buttons and player information */
+  }
+
+  /* Make sure the buttons are fully visible */
+  .btn--new,
+  .btn--roll,
+  .btn--hold {
+    position: static;
+    width: 100%;
+  }
+
+  /* Move the buttons to the right side */
+  .btn--new,
+  .btn--roll,
+  .btn--hold {
+    text-align: right;
+    margin-right: 1rem;
   }
 }
