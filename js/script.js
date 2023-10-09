@@ -63,7 +63,7 @@ btnRoll.addEventListener('click', function () {
     diceEl.src = `dice-${dice}.png`;
 
     // 3. Play the dice roll sound
-    playSound('dice-roll.mp3'); // Replace with the actual sound file
+    playSound('audio/dice-roll.mp3'); // Replace with the actual sound file
 
     // 4. Check for rolled 1 and switch player
     if (dice !== 1) {
@@ -77,7 +77,7 @@ btnRoll.addEventListener('click', function () {
       switchPlayer();
 
       // Play the switch player sound
-      playSound('switch-player.mp3'); // Replace with the actual sound file
+      playSound('audio/switch-player.mp3'); // Replace with the actual sound file
     }
   }
 });
@@ -106,7 +106,7 @@ btnHold.addEventListener('click', function () {
         .classList.remove('player--active');
 
       // Play the win game sound
-      playSound('win-game.mp3'); // Replace with the actual sound file
+      playSound('audio/win-game.mp3'); // Replace with the actual sound file
     } else {
       // Switch to the next player
       switchPlayer();
