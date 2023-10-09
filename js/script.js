@@ -60,7 +60,7 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `images/dice-${dice}.png`;
 
     // 3. Play the dice roll sound
     playSound('audio/dice-roll.mp3'); // Replace with the actual sound file
